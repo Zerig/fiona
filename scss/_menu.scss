@@ -1,0 +1,37 @@
+// main: main.scss
+#menu{
+	background-color: $silver;
+
+
+	a{
+		text-transform:uppercase;
+		font-weight:bold;
+		font-size:16px;
+		padding:62px 20px;
+		display:inline-block;
+		color:$white;
+	}
+
+	a:hover{
+		//background-color:$silver - 50;
+
+		-webkit-animation-name: darker; /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+		animation-name: darker;
+		animation-duration: 2s;
+	}
+
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes darker {
+	    from {background-color: $silver;}
+	    to {background-color: $silver - 50;}
+	}
+
+	/* Standard syntax */
+	@keyframes darker {
+		from {background-color: $silver;}
+	    to {background-color: $silver - 50;}
+	}
+
+
+}

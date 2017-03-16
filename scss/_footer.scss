@@ -1,0 +1,51 @@
+// main: main.scss
+
+footer{
+	font-size:16px;
+
+	.container{
+		padding:32px 60px;
+	}
+
+	.copyright{
+		width:100%;
+		text-align:center;
+	}
+
+	a{
+		color:$silver;
+	}
+
+	a:hover{
+		img{
+			//filter: brightness(0.5);
+			-webkit-animation-name: darker-brightness; /* Safari 4.0 - 8.0 */
+			-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+			animation-name: darker-brightness;
+			animation-duration: 1s;
+		}
+	}
+
+
+
+
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes darker-brightness {
+		from {filter: brightness(1.0);}
+		to {filter: brightness(0.5);}
+	}
+
+	/* Standard syntax */
+	@keyframes darker-brightness {
+		from {filter: brightness(1.0);}
+		to {filter: brightness(0.5);}
+	}
+
+
+	table{
+		td{
+			vertical-align:top;
+			padding-right:10px;
+		}
+	}
+}

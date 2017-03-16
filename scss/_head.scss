@@ -1,0 +1,21 @@
+// main: main.scss
+#head{
+	.container{
+		background-position: top center;
+
+		span{
+			line-height:656px;
+			vertical-align:middle;
+		}
+
+		h1{
+			font-family: 'Times New Roman', serif;
+			font-size:64px;
+			color:$white;
+			display:inline-block;
+			vertical-align:middle;
+			text-shadow: 0px 0px 14px rgba(0,0,0,0.95);
+		}
+	}
+
+}
